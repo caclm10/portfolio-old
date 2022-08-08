@@ -9,10 +9,10 @@ function toggleActiveNavLink() {
 }
 
 function centerNavbarBrand() {
-    const homeLeft = document.querySelector('#home .content .left')
-    const navbarBrand = document.querySelector(`.navbar-brand`)
+    // const homeLeft = document.querySelector('#home .content .left')
+    // const navbarBrand = document.querySelector(`.navbar-brand`)
 
-    navbarBrand.style.width = `${homeLeft.clientWidth - 24}px`
+    // navbarBrand.style.width = `${homeLeft.clientWidth - 24}px`
 }
 
 document.addEventListener('DOMContentLoaded', () => {
