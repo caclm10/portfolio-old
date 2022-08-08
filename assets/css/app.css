@@ -1,6 +1,61 @@
-#about {
-  background-color: #393939;
-  text-align: center;
+#home .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  height: 100%;
+}
+
+#home .content .left,
+#home .content .right {
+  height: 100%;
+  padding-top: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home .content .left {
+  background-color: #0a0a0a;
+  padding: 0 calc(1.5rem * 0.5);
+}
+
+#home .content .left > div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 60%;
+  padding-top: 100px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+#home .content .left > div h2 .intro {
+  font-size: 45px;
+}
+
+#home .content .left > div h2 .name {
+  font-size: 60px;
+}
+
+#home .content .left > div .job-desc {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff03c;
+  color: #0a0a0a;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#home .content .right {
+  background-color: #939393;
 }
 
 #skills {
@@ -31,22 +86,16 @@
 
 section {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+section div {
+  width: 100%;
 }
 
 .profile-picture {
   vertical-align: middle;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -96,5 +145,23 @@ section {
 
 .bi.bi-right {
   margin-left: 0.25rem;
+}
+
+.navbar-brand {
+  text-align: center;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  padding: 0 !important;
+  margin: 0 1.3rem;
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #fff13c;
+}
+
+.navbar-nav .nav-link:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,6 +1,56 @@
-#about {
-  background-color: rgb(57, 57, 57);
-  text-align: center;
+#home {
+  // text-align: center;
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 100%;
+
+    .left,
+    .right {
+      height: 100%;
+      padding-top: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left {
+      background-color: rgb(10, 10, 10);
+      padding: 0 calc(1.5rem * 0.5);
+
+      & > div {
+        width: fit-content;
+        padding-left: 60%;
+        padding-top: 100px;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        z-index: 10;
+
+        h2 {
+          .intro {
+            font-size: 45px;
+          }
+
+          .name {
+            font-size: 60px;
+          }
+        }
+
+        .job-desc {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: rgb(255, 240, 60);
+          color: rgb(10, 10, 10);
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .right {
+      background-color: #939393;
+    }
+  }
 }
 
 #skills {
@@ -32,16 +82,19 @@
 
 section {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  div {
+    width: 100%;
+  }
 }
 
 .profile-picture {
   vertical-align: middle;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -88,5 +141,25 @@ section {
 
   &.bi-right {
     margin-left: 0.25rem;
+  }
+}
+
+.navbar-brand {
+  text-align: center;
+}
+
+.navbar-nav {
+  .nav-link {
+    color: #fff;
+    padding: 0 !important;
+    margin: 0 1.3rem;
+
+    &.active {
+      border-bottom: 2px solid rgb(255, 241, 60);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

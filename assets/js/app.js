@@ -8,10 +8,18 @@ function toggleActiveNavLink() {
     }
 }
 
+function centerNavbarBrand() {
+    const homeLeft = document.querySelector('#home .content .left')
+    const navbarBrand = document.querySelector(`.navbar-brand`)
+
+    navbarBrand.style.width = `${homeLeft.clientWidth - 24}px`
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.querySelector(`form#contact-form`)
 
     toggleActiveNavLink()
+    centerNavbarBrand()
 
     new fullScroll({
         mainElement: "main",
@@ -52,5 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
+    })
+
+    window.addEventListener('resize', event => {
+        centerNavbarBrand()
     })
 })
