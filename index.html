@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewin Xander</title>
+
+    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./full-page-1.0.2/stylesheet/full-page-scroll.min.css">
+    <link href="./aos/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand bg-transparent fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#0">Lewin Xander</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#0">About</a>
+                    <a class="nav-link" href="#1">Skills</a>
+                    <a class="nav-link" href="#2">Works</a>
+                    <a class="nav-link" href="#3">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main" class="scroll-container">
+        <section id="about">
+            <div class="container text-light">
+                <div class="mb-5" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./images/profile.jpg" alt="profile-picture" class="profile-picture">
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="1000">
+                    <h2>
+                        Hi! I Am
+                        <br>
+                        Lewin Xander
+                    </h2>
+
+                    <p>
+                        I am
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container text-center">
+                <div class="row row-cols-4 gy-skills align-items-center" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-delay="300">
+                    <div class="col">
+                        <img src="./images/javascript.svg" alt="javascript">
+                    </div>
+                    <div class="col">
+                        <img src="./images/php.svg" alt="php">
+                    </div>
+                    <div class="col">
+                        <img src="./images/nodejs.svg" alt="nodejs">
+                    </div>
+                    <div class="col">
+                        <img src="./images/mysql.svg" alt="mysql">
+                    </div>
+                    <div class="col">
+                        <img src="./images/react.svg" alt="react">
+                    </div>
+                    <div class="col">
+                        <img src="./images/vue.svg" alt="vue">
+                    </div>
+                    <div class="col">
+                        <img src="./images/laravel.svg" alt="laravel">
+                    </div>
+                    <div class="col">
+                        <img src="./images/express.svg" alt="express">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works">
+            <div class="container">
+                <div class="swiper project-slideshow px-4" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-delay="300">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/project-1.png" alt="project 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/project-2.png" alt="project 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/project-3.png" alt="project 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/project-4.png" alt="project 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/project-5.png" alt="project 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+
+                <form id="contact-form" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" id="email"
+                            placeholder="Your email address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-left" viewBox="0 0 16 16">
+                            <path
+                                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z">
+                            </path>
+                        </svg>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="./bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./full-page-1.0.2/javascript/full-page-scroll.min.js"></script>
+    <script src="./aos/aos.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

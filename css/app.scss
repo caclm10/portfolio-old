@@ -1,0 +1,92 @@
+#about {
+  background-color: rgb(57, 57, 57);
+  text-align: center;
+}
+
+#skills {
+  background-color: rgb(145, 141, 110);
+
+  img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+#works {
+  background-color: #426341;
+}
+
+#contact {
+  background-color: #fff;
+  // color: var(--bs-gray-200);
+
+  h2 {
+    font-size: calc(1.325rem + 3vw);
+    padding-bottom: 2rem;
+  }
+
+  form {
+    max-width: 500px;
+  }
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gy-skills {
+  --bs-gutter-y: 10rem;
+}
+
+.project-slideshow {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  // min-height: 500px;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        // min-height: 500px;
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.bi {
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentcolor;
+
+  &.bi-left {
+    margin-right: 0.25rem;
+  }
+
+  &.bi-right {
+    margin-left: 0.25rem;
+  }
+}
