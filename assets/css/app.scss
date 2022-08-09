@@ -119,16 +119,6 @@
     height: 50px;
   }
 
-  .header {
-    margin-bottom: 50px;
-    padding-top: 35px;
-    @include flex-center;
-
-    h3 {
-      font-size: 50px;
-    }
-  }
-
   .content {
     --bs-gutter-y: 30px;
     --bs-gutter-x: 8rem;
@@ -140,7 +130,13 @@
 }
 
 #works {
-  background-color: #426341;
+  background-color: #fff;
+  @include flex-align-center;
+
+  img {
+    width: 100%;
+    filter: grayscale(90);
+  }
 }
 
 #contact {
@@ -165,6 +161,31 @@ section {
 
   & > div {
     width: 100%;
+  }
+}
+
+.section-header {
+  margin-bottom: 50px;
+  padding-top: 35px;
+  @include flex-center;
+
+  & > div {
+    text-align: end;
+
+    h3 {
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+      background-color: $yellow;
+      display: inline-block;
+      padding-left: 1rem;
+      font-weight: 600;
+      height: 20px;
+    }
   }
 }
 
