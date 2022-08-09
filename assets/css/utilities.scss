@@ -1,0 +1,42 @@
+$dark: rgb(10, 10, 10);
+$yellow: rgb(255, 241, 60);
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.pe-2px {
+  padding-right: 2px;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.h-20px {
+  height: 20px;
+}
+
+.w-50px {
+  width: 50px;
+}

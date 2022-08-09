@@ -1,16 +1,4 @@
-$dark: rgb(10, 10, 10);
-$yellow: rgb(255, 241, 60);
-
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
+@import "./utilities.scss";
 
 #home {
   // text-align: center;
@@ -69,8 +57,7 @@ $yellow: rgb(255, 241, 60);
 #about {
   background-color: rgb(224, 224, 224);
 
-  display: flex;
-  align-items: center;
+  @include flex-align-center;
 
   .wrapper {
     --bs-gutter-x: 2rem;
@@ -123,11 +110,32 @@ $yellow: rgb(255, 241, 60);
 }
 
 #skills {
-  background-color: rgb(145, 141, 110);
+  background-color: #fff;
+
+  @include flex-align-center;
 
   img {
-    width: 100px;
-    height: auto;
+    width: 50px;
+    height: 50px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+    padding-top: 35px;
+    @include flex-center;
+
+    h3 {
+      font-size: 50px;
+    }
+  }
+
+  .content {
+    --bs-gutter-y: 30px;
+    --bs-gutter-x: 8rem;
+
+    p {
+      color: rgb(180, 180, 180);
+    }
   }
 }
 
@@ -265,12 +273,4 @@ section {
       }
     }
   }
-}
-
-.w-fit-content {
-  width: fit-content;
-}
-
-.pe-2px {
-  padding-right: 2px;
 }
