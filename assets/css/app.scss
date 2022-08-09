@@ -1,3 +1,17 @@
+$dark: rgb(10, 10, 10);
+$yellow: rgb(255, 241, 60);
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #home {
   // text-align: center;
   .content {
@@ -15,11 +29,10 @@
     }
 
     .left {
-      background-color: rgb(10, 10, 10);
+      background-color: $dark;
       padding: 0 calc(1.5rem * 0.5);
 
       & > div {
-        width: fit-content;
         margin-left: 60%;
         padding-top: 100px;
         letter-spacing: 2px;
@@ -39,8 +52,8 @@
         .job-desc {
           display: inline-block;
           padding: 10px 20px;
-          background-color: rgb(255, 240, 60);
-          color: rgb(10, 10, 10);
+          background-color: $yellow;
+          color: $dark;
           text-transform: uppercase;
           font-weight: bold;
         }
@@ -55,6 +68,58 @@
 
 #about {
   background-color: rgb(224, 224, 224);
+
+  display: flex;
+  align-items: center;
+
+  .wrapper {
+    --bs-gutter-x: 2rem;
+
+    .picture {
+      & > div {
+        $size: 350px;
+
+        position: relative;
+        min-height: calc(#{$size} + 50px);
+        max-width: calc(#{$size} + 80px);
+        @include mx-auto;
+
+        .overlay {
+          background-color: #333434;
+          height: $size;
+          width: $size;
+          position: absolute;
+          left: calc(var(--bs-gutter-x) * 0.5);
+          top: 0;
+        }
+
+        .wrapper {
+          position: absolute;
+          bottom: 0;
+          right: calc(var(--bs-gutter-x) * 0.5);
+          background-color: #504f50;
+          width: $size;
+          height: $size;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          img {
+            object-fit: cover;
+            width: 400px;
+            height: 400px;
+          }
+        }
+      }
+    }
+
+    .desc {
+      @include flex-center;
+
+      & > div {
+        max-width: 500px;
+      }
+    }
+  }
 }
 
 #skills {
@@ -90,7 +155,7 @@ section {
   // justify-content: center;
   // align-items: center;
 
-  div {
+  & > div {
     width: 100%;
   }
 }
@@ -177,8 +242,20 @@ section {
           padding: 0 !important;
           margin: 0 1.3rem;
 
+          &::after {
+            content: " ";
+            display: flex;
+            height: 2px;
+            width: 0;
+            background-color: $yellow;
+            transition: width 0.4s linear;
+          }
+
           &.active {
-            border-bottom: 2px solid rgb(255, 241, 60);
+            // border-bottom: 2px solid $yellow;
+            &::after {
+              width: 100%;
+            }
           }
 
           &:last-child {
@@ -188,4 +265,12 @@ section {
       }
     }
   }
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.pe-2px {
+  padding-right: 2px;
 }
