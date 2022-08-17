@@ -9,19 +9,13 @@
 }
 
 .flex-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-yellow {
-  background-color: #fff13c;
+  background-color: rgb(255, 241, 60);
 }
 
 .h-20px {
@@ -33,33 +27,22 @@
 }
 
 #home .content {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.5fr;
-      grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.5fr;
   height: 100%;
 }
-
 #home .content .left,
 #home .content .right {
   height: 100%;
   padding-top: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #home .content .left {
-  background-color: #0a0a0a;
-  padding: 0 calc(1.5rem * 0.5);
+  background-color: rgb(10, 10, 10);
+  padding: 0 0.75rem;
 }
-
 #home .content .left > div {
   margin-left: 60%;
   padding-top: 100px;
@@ -67,42 +50,32 @@
   white-space: nowrap;
   z-index: 10;
 }
-
 #home .content .left > div h2 .intro {
   font-size: 45px;
 }
-
 #home .content .left > div h2 .name {
   font-size: 60px;
 }
-
 #home .content .left > div .job-desc {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #fff13c;
-  color: #0a0a0a;
+  background-color: rgb(255, 241, 60);
+  color: rgb(10, 10, 10);
   text-transform: uppercase;
   font-weight: bold;
 }
-
 #home .content .right {
   background-color: #939393;
 }
 
 #about {
-  background-color: #e0e0e0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(224, 224, 224);
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #about .wrapper {
   --bs-gutter-x: 2rem;
 }
-
 #about .wrapper .picture > div {
   position: relative;
   min-height: calc(350px + 50px);
@@ -110,7 +83,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 #about .wrapper .picture > div .overlay {
   background-color: #333434;
   height: 350px;
@@ -119,7 +91,6 @@
   left: calc(var(--bs-gutter-x) * 0.5);
   top: 0;
 }
-
 #about .wrapper .picture > div .wrapper {
   position: absolute;
   bottom: 0;
@@ -127,97 +98,94 @@
   background-color: #504f50;
   width: 350px;
   height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
 }
-
 #about .wrapper .picture > div .wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 400px;
   height: 400px;
 }
-
 #about .wrapper .desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #about .wrapper .desc > div {
   max-width: 500px;
 }
 
 #skills {
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #skills img {
   width: 50px;
   height: 50px;
 }
-
 #skills .content {
   --bs-gutter-y: 30px;
   --bs-gutter-x: 8rem;
 }
-
 #skills .content p {
-  color: #b4b4b4;
+  color: rgb(180, 180, 180);
 }
 
 #works {
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #works img {
   width: 100%;
-  -webkit-filter: grayscale(90);
-          filter: grayscale(90);
+  filter: grayscale(90);
 }
 
 #contact {
-  background-color: #fff;
+  background-color: rgb(10, 10, 10);
+  color: #fff;
 }
-
-#contact h2 {
-  font-size: calc(1.325rem + 3vw);
+#contact .container {
+  padding-top: 225px;
+}
+#contact .container .desc {
+  margin-top: -21px;
+}
+#contact .container .desc h2 {
+  font-size: 80px;
+  font-weight: 500;
   padding-bottom: 2rem;
 }
-
-#contact form {
-  max-width: 500px;
+#contact .container .desc .subtitle {
+  font-weight: 500;
+  font-size: 25px;
+}
+#contact .container .desc .data {
+  margin-top: 65px;
+}
+#contact .container .form-wrapper {
+  max-width: 550px;
+  width: 100%;
+}
+#contact .container .form-wrapper .social {
+  margin-top: 115px;
+  display: flex;
+  justify-content: end;
+}
+#contact .container .form-wrapper .social a {
+  margin-left: 50px;
+  color: #fff;
+}
+#contact .container .form-wrapper .social a:first-child {
+  margin-left: 0;
 }
 
 section {
   height: 100vh;
 }
-
 section > div {
   width: 100%;
 }
@@ -225,30 +193,21 @@ section > div {
 .section-header {
   margin-bottom: 50px;
   padding-top: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .section-header > div {
   text-align: end;
 }
-
 .section-header > div h3 {
   font-size: 50px;
   text-transform: uppercase;
   margin-bottom: 0;
 }
-
 .section-header > div p {
   margin-bottom: 0;
-  background-color: #fff13c;
+  background-color: rgb(255, 241, 60);
   display: inline-block;
   padding-left: 1rem;
   font-weight: 600;
@@ -272,7 +231,6 @@ section > div {
   max-width: 1100px;
   height: auto;
 }
-
 .project-slideshow .swiper-wrapper .swiper-slide img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -281,15 +239,9 @@ section > div {
 }
 
 .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
@@ -301,11 +253,9 @@ section > div {
   vertical-align: -0.125em;
   fill: currentcolor;
 }
-
 .bi.bi-left {
   margin-right: 0.25rem;
 }
-
 .bi.bi-right {
   margin-left: 0.25rem;
 }
@@ -313,54 +263,55 @@ section > div {
 .navbar {
   --bs-navbar-padding-y: 0;
 }
-
 .navbar .wrapper {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.5fr;
-      grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.5fr;
   width: 100%;
 }
-
 .navbar .wrapper .navbar-brand {
-  padding: 13px calc(1.5rem * 0.5);
+  padding: 13px 0.75rem;
   text-align: center;
   margin-right: 0;
-  background-color: #0a0a0a;
+  background-color: rgb(10, 10, 10);
 }
-
 .navbar .wrapper .navbar-brand a {
   color: inherit;
   text-decoration: none;
 }
-
 .navbar .wrapper .navbar-collapse {
   background-color: #939393;
 }
-
 .navbar .wrapper .navbar-collapse .navbar-nav .nav-link {
   color: #fff;
   padding: 0 !important;
   margin: 0 1.3rem;
 }
-
 .navbar .wrapper .navbar-collapse .navbar-nav .nav-link::after {
   content: " ";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 2px;
   width: 0;
-  background-color: #fff13c;
-  -webkit-transition: width 0.4s linear;
+  background-color: rgb(255, 241, 60);
   transition: width 0.4s linear;
 }
-
 .navbar .wrapper .navbar-collapse .navbar-nav .nav-link.active::after {
   width: 100%;
 }
-
 .navbar .wrapper .navbar-collapse .navbar-nav .nav-link:last-child {
   margin-right: 0;
 }
-/*# sourceMappingURL=app.css.map */
+
+.btn-dark {
+  border-width: 3px;
+  box-shadow: none !important;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #4c4ddc;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #404040;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-active-shadow: transparent;
+}/*# sourceMappingURL=app.css.map */

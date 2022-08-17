@@ -16,7 +16,6 @@ function centerNavbarBrand() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.querySelector(`form#contact-form`)
 
     toggleActiveNavLink()
     centerNavbarBrand()
@@ -36,10 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
         grabCursor: true,
     })
 
+    const contactForm = document.querySelector(`form#contact-form`)
     contactForm.addEventListener('submit', event => {
         event.preventDefault()
 
-        alert('Email sent.')
+        // alert('Email sent.')
     })
 
     window.addEventListener('hashchange', event => {
